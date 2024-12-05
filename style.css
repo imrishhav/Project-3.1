@@ -1,0 +1,238 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header .logo p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.about .photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about .details {
+    max-width: 600px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Resume Section */
+.resume {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.resume h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.resume-content {
+    display: flex;
+    justify-content: space-between; /* Align columns side by side */
+    flex-wrap: wrap;
+}
+
+.resume-column {
+    width: 22%; /* Adjusted to fit 4 columns side by side */
+    padding: 10px;
+}
+
+.resume-column h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.resume-column ul {
+    list-style: none;
+}
+
+.resume-column ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Previous Projects Section */
+.projects-folder {
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.folder-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.folder-button:hover {
+    background-color: #444;
+}
+
+.projects-list {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.projects-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.projects-list ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.projects-list ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.projects-list ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-column {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .projects-folder {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.gallery-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Connect Section */
+.connect {
+    padding: 20px;
+    text-align: center;
+}
+
+.connect h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
